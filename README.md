@@ -1,13 +1,21 @@
-# Kubernetes Practice & Projects Portfolio 🚀
+# Kubernetes Demo Microservices Project
 
-This repository contains hands-on Kubernetes projects and practice manifests following the **Tech World with Nana** DevOps Roadmap.
+This repository contains the declarative Kubernetes manifests for a multi-environment microservice architecture setup, following the **Tech World with Nana** DevOps Roadmap.
 
-## 📂 Projects Directory
+## 🚀 Architecture Highlights
+- **Environment Isolation:** Separate `dev` and `prod` namespaces.
+- **Database & Persistence:** MySQL deployed using `StatefulSet` with dynamic `PVC` provisioning.
+- **Security:** Sensitive data managed via Kubernetes `Secrets` and `ConfigMaps`.
+- **Microservices Layer:** Stateless frontend web app with `ClusterIP` Services.
+- **Traffic Routing:** `Ingress Controller` configured for domain routing (`dev.myapp.com` / `prod.myapp.com`).
 
-### 1. [01-Basic K8s Practice](./)
-- Initial practice manifests and foundational Kubernetes architecture testing.
-
-### 2. [02-Microservices Architecture Project](./02-microservices-project)
-- Multi-environment setup (`dev`/`prod` namespaces).
-- Stateful workloads with MySQL StatefulSets & PVCs.
-- Secrets, ConfigMaps, ClusterIP Services, and NGINX Ingress Controller setup.
+## 🛠️ How to Deploy
+1. Create namespaces:
+   ```bash
+   kubectl create ns dev
+   kubectl create ns prod
+   ```
+2. Apply Dev environment manifests:
+   ```bash
+   kubectl apply -f dev-environment.yaml
+   ```
