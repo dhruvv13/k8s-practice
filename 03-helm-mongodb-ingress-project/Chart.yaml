@@ -1,0 +1,6 @@
+apiVersion: v2
+name: mongodb-ingress-demo
+description: Production-grade Replicated MongoDB with Mongo-Express UI & NGINX Ingress
+type: application
+version: 0.1.0
+appVersion: "5.0"

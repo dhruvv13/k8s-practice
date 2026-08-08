@@ -1,0 +1,12 @@
+mongodb:
+  replicaCount: 2
+  rootUser: root
+  rootPassword: rootpassword123
+  image: mongo:5.0
+
+mongoExpress:
+  replicaCount: 1
+  nodePort: 30081
+
+ingress:
+  host: mongo.express.com
