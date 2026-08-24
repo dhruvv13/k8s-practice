@@ -1,8 +1,8 @@
-# Kubernetes Practice & Projects Portfolio ðŸš€
+# Kubernetes Practice & Projects Portfolio 
 
 This repository contains hands-on Kubernetes projects following the **Tech World with Nana** DevOps Roadmap.
 
-## ðŸ“‚ Projects Directory
+‚ Projects Directory
 
 ### 1. [01-Basic K8s Practice](./01-basic-k8s-practice)
 - Foundational Kubernetes manifests, Pods, Deployments, and Service configurations.
